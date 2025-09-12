@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Dieta Saludable</title>
+    <link rel="stylesheet" href="quizz.css">
+</head>
+<body>
+    <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="quizz.html">Cuestionario</a></li>
+                    <li><a href="../blog/blog.html">Blog</a></li>
+                    <li><a href="../nosotros/nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="quiz-container">
+        <div class="header">
+            <h1>🥗 Cuestionario de vida fitness</h1>
+            <p>Pon a prueba tus conocimientos sobre la vida saludable y ejercitada</p>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div id="quizContent">
+            <div class="question-number" id="questionNumber"></div>
+            <div class="question-container">
+                <div class="question" id="question"></div>
+                <div class="options" id="options"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="score-display">
+                Puntuación: <span id="currentScore">0</span>/10
+            </div>
+            <div>
+                <button class="btn btn-secondary" id="prevBtn" onclick="previousQuestion()">Anterior</button>
+                <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Siguiente</button>
+            </div>
+        </div>
+
+        <div id="results" class="results hidden">
+            <h2>¡Cuestionario Completado! 🎉</h2>
+            <div class="final-score" id="finalScore"></div>
+            <div class="feedback" id="feedback"></div>
+            <button class="btn btn-primary" onclick="restartQuiz()">Reiniciar Cuestionario</button>
+        </div>
+    </div>
+
+    <script src="quizz.js"></script>
+</body>
+</html>
